@@ -554,4 +554,27 @@ footer {
         width: 10px;
         height: 10px;
     }
+
+    .load-more-btn {
+  background: #facc15;
+  color: #111827;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 2rem auto;
+  display: block;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.load-more-btn:hover {
+  background: #eab308;
+  transform: scale(1.02);
+}
+
+.load-more-btn:active {
+  transform: scale(0.98);
+}
 }
