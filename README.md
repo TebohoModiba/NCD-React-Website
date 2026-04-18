@@ -1,7 +1,6 @@
 # Nako Creative Design (NCD) — Business Website
 
-> **Future Interns Full Stack Web Development Internship — Task 3**
-> Built and deployed by Teboho Mosehle | April 2026
+> Built and deployed by Teboho Modiba | April 2026
 
 Live site: [https://nakocreativedesigns.co.za](https://nakocreativedesigns.co.za)
 
@@ -11,7 +10,7 @@ Live site: [https://nakocreativedesigns.co.za](https://nakocreativedesigns.co.za
 
 This is the official website for **Nako Creative Design (NCD)**, a registered creative agency co-founded by Teboho Modiba and Inako Bukani. NCD offers professional web development, graphic design, branding, and digital marketing services to businesses across South Africa.
 
-For Future Interns Task 3, rather than building a website for an external business, this project involved **upgrading NCD's existing website** — migrating it from a plain HTML/CSS/JS stack to a modern **React.js** application. The result is a faster, more maintainable, component-based site that better represents the agency's brand and capabilities.
+This project involved **upgrading NCD's existing website** — migrating it from a plain HTML/CSS/JS stack to a modern **React.js** application. The result is a faster, more maintainable, component-based site that better represents the agency's brand and capabilities.
 
 ---
 
@@ -187,8 +186,7 @@ Edit `src/components/ContactForm.jsx` and update the WhatsApp numbers in the `te
 
 **Teboho Modiba**
 Co-Founder & Lead Web Developer, Nako Creative Design
-BSc Computer and Information Sciences (Application Development) — Emeris, Midrand
-Future Interns Full Stack Web Development Intern, 2026
+
 
 ---
 
