@@ -21,6 +21,12 @@ nav {
     position: relative;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
 .logo-img {
     width: 150px;
     border-radius: 8px;
@@ -107,6 +113,26 @@ nav {
 .page-content p {
     max-width: 600px;
     margin: 0 auto 1rem;
+}
+
+/* HERO (Home page intro) */
+.hero {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    color: #facc15;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #fff;
 }
 
 /* ABOUT TILE */
@@ -317,6 +343,46 @@ nav {
     color: #facc15;
 }
 
+.service-tier-label {
+    color: #facc15;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: #eab30826;
+    border-left: 3px solid #facc15;
+    border-radius: 4px;
+    margin: 1rem 0 0.25rem;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.service-tier-label--scratch {
+    color: #34d399;
+    background: #1a7a5e26;
+    border-left: 3px solid #34d399;
+}
+
+.service-tier-note {
+    color: #9ca3af;
+    margin: 0 0 0.5rem;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.service-stack,
+.service-badge {
+    color: #9ca3af;
+    vertical-align: middle;
+    background: #2d3748;
+    border-radius: 4px;
+    margin-left: 0.4rem;
+    padding: 0.1rem 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
 /* ABOUT SECTION */
 .about-section {
     display: flex;
@@ -412,19 +478,41 @@ nav {
 }
 
 /* CONTACT INFO */
-.contact-info {
+.contact-info,
+.Inako-contact-info,
+.Teboho-contact-info {
     margin-top: 2rem;
 }
 
 .contact-info p,
 .contact-info strong,
-.contact-info a {
+.contact-info a,
+.Inako-contact-info p,
+.Inako-contact-info strong,
+.Inako-contact-info a,
+.Teboho-contact-info p,
+.Teboho-contact-info strong,
+.Teboho-contact-info a {
     color: #fff;
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info a:hover,
+.Inako-contact-info a:hover,
+.Teboho-contact-info a:hover {
     text-decoration: underline;
+}
+
+.Inako-contact-info h2,
+.Inako-contact-info h3,
+.Teboho-contact-info h3 {
+    color: #facc15;
+}
+
+.Teboho-contact-info {
+    margin-top: 2.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2d3748;
 }
 
 /* FOOTER */
@@ -577,4 +665,145 @@ footer {
 .load-more-btn:active {
   transform: scale(0.98);
 }
+}
+
+/* -------------------------------------------------
+   ABOUT PAGE — INTERACTIVE FOUNDER CARDS
+------------------------------------------------- */
+
+.about-section {
+    perspective: 1200px;
+}
+
+.about-section--reverse {
+    flex-direction: row-reverse;
+}
+
+/* Bio content reveals once, when the section scrolls into view */
+.about-content {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.about-section.is-in-view .about-content {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Flip card */
+.flip-card {
+    width: 250px;
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.15s ease-out;
+    transform-style: preserve-3d;
+    outline: none;
+    flex-shrink: 0;
+}
+
+.flip-card:focus-visible {
+    outline: 2px solid #facc15;
+    outline-offset: 4px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.flip-card-front {
+    display: flex;
+}
+
+.flip-card-front .about-image {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+    background: #111827;
+    border: 1px solid #facc15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem;
+    text-align: center;
+    gap: 0.75rem;
+}
+
+.flip-card-back p {
+    color: #fff;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.flip-hint {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 0.7rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.55);
+    padding: 0.3rem 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+}
+
+.flip-card-front:hover .flip-hint {
+    opacity: 1;
+}
+
+.flip-hint--back {
+    position: static;
+    background: none;
+    opacity: 0.7;
+    color: #facc15;
+}
+
+@media (max-width: 768px) {
+    .about-section--reverse {
+        flex-direction: column;
+    }
+
+    .flip-card {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Tilt relies on a mouse; keep it off on touch, flip still works via tap */
+    .flip-card {
+        transform: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .about-content,
+    .flip-card,
+    .flip-card-inner,
+    .flip-hint {
+        transition: none !important;
+    }
 }
