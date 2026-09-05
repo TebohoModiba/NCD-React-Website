@@ -21,7 +21,7 @@ const founders = [
         He's all about crafting visuals that don't just look good, but actually mean something.
       </>,
       "With a sharp eye for detail and a heart for authentic storytelling, Inako brings brands to life through graphics, branding, and creative direction that feel personal and intentional. He believes design should do more than just exist — it should connect, inspire, and leave a mark.",
-      "Beyond the canvas, Inako is driven by purpose, creativity, and community — because at NCD, design isn't just what we do, it's who we are.",
+      "Beyond the canvas, Inako is driven by purpose, creativity, and community because at NCD, design isn't just what we do; it's who we are.",
     ],
   },
   {
@@ -35,12 +35,12 @@ const founders = [
     ],
     paragraphs: [
       <>
-        <strong>Teboho M. Modiba</strong> is the co-owner and web developer at Nako's Creative
-        Design — the digital mind behind the screens. He's all about turning creative ideas into
+        <strong>Teboho M. Modiba</strong> is the co-owner and web developer at Nako’s Creative
+        Design, the digital mind behind the screens. He’s all about turning creative ideas into
         sleek, functional, and eye-catching websites that bring brands to life online.
       </>,
-      "With a background in computer science and IBM certifications under his belt, Teboho blends tech and creativity to build digital experiences that feel fresh and authentic. Whether it's crafting smooth user interfaces or perfecting a website's flow, he's driven by innovation and detail.",
-      "Outside the lines of code, Teboho is all about growth, collaboration, and finding new ways to use technology to inspire creativity — because at NCD, design isn't just work, it's a lifestyle.",
+      "With a background in computer science and IBM certifications under his belt, Teboho blends tech and creativity to build digital experiences that feel fresh and authentic. Whether it’s crafting smooth user interfaces or perfecting a website’s flow, he’s driven by innovation and detail.",
+      "Outside the lines of code, Teboho is all about growth, collaboration, and finding new ways to use technology to inspire creativity because at NCD, design isn’t just work; it’s a lifestyle.",
     ],
   },
 ];
