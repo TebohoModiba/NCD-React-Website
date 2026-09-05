@@ -4,7 +4,7 @@ const slides = [
   '/assets/Miss Trans Diva.jpg',
   '/assets/Qhama Birthday Poster.jpg',
   '/assets/Miss Teenable.jpg',
-  '/assets/Mdantsane-LGBTQIA-Safe-Space-and-Braai'
+  '/assets/Mdantsane-LGBTQIA-Safe-Space-and-Braai.jpg'
 ];
 
 export default function ImageSlider() {
