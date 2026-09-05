@@ -24,7 +24,7 @@ export default function Portfolio() {
     { name: 'Template4.png', category: 'Templates' }
   ];
 
-  const categories = ['All', 'Posters', 'Events', 'Templates'];
+  const categories = ['All', 'Posters and Flyers', 'Events', 'Templates'];
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [visibleCount, setVisibleCount] = useState(8);
   const [activeImage, setActiveImage] = useState(null);
