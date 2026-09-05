@@ -10,8 +10,10 @@ const founders = [
     role: 'Founder & Owner',
     image: '/assets/Inako Bukani.jpg',
     alt: 'Founder and Owner, Inako Bukani',
-    funFact:
-      "Fun fact: most of Inako's best logo concepts start as pen sketches on serviettes at a braai.",
+    funFacts: [
+      "I'm a creative at heart — I bring a unique eye, a bold but thoughtful vibe, and I create work that connects with feeling.",
+      "I'm focused, driven, and in my growth era — passionate about delivering creative work that is authentic, impactful, and professional.",
+    ],
     paragraphs: [
       <>
         <strong>Inako Bukani</strong> is the founder and creative force behind Nako's Creative
@@ -28,8 +30,9 @@ const founders = [
     role: 'Co-founder & Co-Owner',
     image: '/assets/Teboho M. Modiba.jpg',
     alt: 'Teboho M. Modiba, Co-Owner',
-    funFact:
-      "Fun fact: Teboho's first real line of code was written just to make his terminal greet his mom every morning.",
+    funFacts: [
+      "Outside of work, Teboho's either cooking, gaming, eating, or asleep — no in-between.",
+    ],
     paragraphs: [
       <>
         <strong>Teboho M. Modiba</strong> is the co-owner and web developer at Nako's Creative
@@ -85,7 +88,9 @@ function FounderCard({ founder, reverse }) {
             <span className="flip-hint">Tap for a fun fact ✦</span>
           </div>
           <div className="flip-card-face flip-card-back">
-            <p>{founder.funFact}</p>
+            {founder.funFacts.map((fact, i) => (
+              <p key={i}>{fact}</p>
+            ))}
             <span className="flip-hint flip-hint--back">Tap to flip back</span>
           </div>
         </div>
