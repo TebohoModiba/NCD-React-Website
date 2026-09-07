@@ -6,9 +6,9 @@ export default function Portfolio() {
   useTitle('Portfolio');
 
   const portfolioData = [
-    { name: 'EFF1.jpg', category: 'Posters' },
-    { name: 'EFF2.jpg', category: 'Posters' },
-    { name: 'EFF3.jpg', category: 'Posters' },
+    { name: 'EFF1.jpg', category: 'Posters and Flyers' },
+    { name: 'EFF2.jpg', category: 'Posters and Flyers' },
+    { name: 'EFF3.jpg', category: 'Posters and Flyers' },
     { name: 'LGBTQIA-Safe-Place-Picnic.jpg', category: 'Events' },
     { name: 'Lingerie Party.jpg', category: 'Events' },
     { name: 'Mdantsane-LGBTQIA-Safe-Space-and-Braai.jpg', category: 'Events' },
@@ -17,7 +17,7 @@ export default function Portfolio() {
     { name: 'MissGamalakhe.jpg', category: 'Events' },
     { name: 'Mr-and-Miss-Radiant-Royal.jpg', category: 'Events' },
     { name: 'Mr-and-Miss-Tsomo.jpg', category: 'Events' },
-    { name: 'Qhama Birthday Poster.jpg', category: 'Posters' },
+    { name: 'Qhama Birthday Poster.jpg', category: 'Posters and Flyers' },
     { name: 'Template1.png', category: 'Templates' },
     { name: 'Template2.png', category: 'Templates' },
     { name: 'Template3.png', category: 'Templates' },
@@ -79,8 +79,8 @@ export default function Portfolio() {
                 className="portfolio-item"
                 onClick={() => setActiveImage(item)}
               >
-                <img 
-                  src={`/assets/${encodeURIComponent(item.name)}`} 
+                <img
+                  src={`/assets/${encodeURIComponent(item.name)}`}
                   alt={cleanAlt}
                   loading="lazy"
                 />
@@ -114,8 +114,8 @@ export default function Portfolio() {
               exit={{ scale: 0.8, opacity: 0 }}
               onClick={(e) => e.stopPropagation()}
             >
-              <button 
-                className="lightbox-close" 
+              <button
+                className="lightbox-close"
                 onClick={() => setActiveImage(null)}
                 aria-label="Close lightbox"
               >
