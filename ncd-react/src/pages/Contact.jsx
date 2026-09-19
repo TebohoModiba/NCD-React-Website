@@ -1,8 +1,13 @@
 import ContactForm from '../components/ContactForm';
-import useTitle from '../hooks/useTitle';
+import useSEO from '../hooks/useSEO';
 
 export default function Contact() {
-  useTitle('Contact Us');
+  useSEO({
+    title: 'Contact Us',
+    description:
+      "Get in touch with Nako's Creative Design via WhatsApp, email, or social media to start your next branding or web design project in Johannesburg.",
+    path: '/contact',
+  });
 
   return (
     <>

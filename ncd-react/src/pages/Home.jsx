@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom';
 import ImageSlider from '../components/ImageSlider';
-import useTitle from '../hooks/useTitle';
+import useSEO from '../hooks/useSEO';
 
 export default function Home() {
-  useTitle('Home');
+  useSEO({
+    title: 'Home',
+    description:
+      "Nako's Creative Design (NCD) is a Johannesburg-based graphic and web design studio creating branding, logos, posters, and custom websites for businesses and events across South Africa.",
+    path: '/',
+  });
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import useTitle from '../hooks/useTitle';
+import useSEO from '../hooks/useSEO';
 import useInView from '../hooks/useInView';
 import useTilt from '../hooks/useTilt';
 
@@ -107,7 +107,12 @@ function FounderCard({ founder, reverse }) {
 }
 
 export default function About() {
-  useTitle('About Us');
+  useSEO({
+    title: 'About Us',
+    description:
+      "Meet the founders of Nako's Creative Design — Inako Bukani, Lead Designer, and Teboho M. Modiba, Lead Web Developer, the creative and technical minds behind NCD.",
+    path: '/about',
+  });
 
   return (
     <>

@@ -1,7 +1,12 @@
-import useTitle from '../hooks/useTitle';
+import useSEO from '../hooks/useSEO';
 
 export default function Services() {
-  useTitle('Services & Pricing');
+  useSEO({
+    title: 'Services & Pricing',
+    description:
+      "Explore NCD's graphic and web design services and pricing — logo design, branding, event posters, social media graphics, and custom website development in South Africa.",
+    path: '/services',
+  });
 
   return (
     <section>

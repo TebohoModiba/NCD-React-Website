@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import useTitle from '../hooks/useTitle';
+import useSEO from '../hooks/useSEO';
 
 export default function Portfolio() {
-  useTitle('Portfolio');
+  useSEO({
+    title: 'Portfolio',
+    description:
+      "Browse Nako's Creative Design's portfolio of branding, event posters, pageant designs, and website templates crafted for clients across South Africa.",
+    path: '/portfolio',
+  });
 
   const portfolioData = [
     { name: 'EFF1.jpg', category: 'Posters and Flyers' },
